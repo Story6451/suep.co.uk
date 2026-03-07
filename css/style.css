@@ -1,0 +1,60 @@
+
+body {
+margin:0;
+font-family: Arial, sans-serif;
+background:#0a0a0a;
+color:white;
+}
+
+nav {
+background:#111;
+padding:10px;
+}
+
+nav ul {
+list-style:none;
+display:flex;
+gap:20px;
+justify-content:center;
+margin:0;
+padding:0;
+}
+
+nav a {
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover {
+color:#00d9ff;
+}
+
+.hero {
+height:60vh;
+background-image:url('../images/thruster.jpg'); /* Replace with your thruster image */
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-overlay {
+background:rgba(0,0,0,0.6);
+padding:40px;
+text-align:center;
+}
+
+.content {
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+footer {
+text-align:center;
+padding:20px;
+background:#111;
+margin-top:40px;
+}

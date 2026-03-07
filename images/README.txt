@@ -1,0 +1,1 @@
+Place your images here. Example: thruster.jpg for homepage background.
