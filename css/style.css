@@ -85,5 +85,12 @@ margin-top:40px;
   background-attachment: fixed; /* parallax effect */
   
   color: white;
-  height: 300px; /* gives the section space */
+  height: 500px; /* gives the section space */
+}
+
+body.projects {
+margin:0;
+font-family: Arial, sans-serif;
+background:#2e2d2d;
+color:white;
 }
