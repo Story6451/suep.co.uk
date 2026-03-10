@@ -60,7 +60,7 @@ margin-top:40px;
 }
 
 .paragraph {
-  width: 900px;
+  width: 850px;
   overflow-wrap: break-word;
 }
 
@@ -73,5 +73,17 @@ margin-top:40px;
   background-attachment: fixed; /* parallax effect */
   
   color: white;
-  height: 300px; /* gives the section space */
+  height: 500px; /* gives the section space */
+}
+
+#io2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../images/Io2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax effect */
+  
+  color: white;
+  height: 500px; /* gives the section space */
 }
