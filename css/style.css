@@ -46,12 +46,6 @@ padding:40px;
 text-align:center;
 }
 
-.content {
-max-width:900px;
-margin:auto;
-padding:40px;
-}
-
 footer {
 text-align:center;
 padding:20px;
@@ -59,9 +53,16 @@ background:#111;
 margin-top:40px;
 }
 
+.content {
+  max-width: 900px;   /* limits line length for readability */
+  margin: auto;       /* centers the content */
+  padding: 40px clamp(20px, 5vw, 50px); /* space on left/right and top/bottom */
+}
+
 .paragraph {
-  width: 900px;
   overflow-wrap: break-word;
+  line-height: 1.6;   /* improves readability */
+  margin-bottom: 20px;
 }
 
 #io1 {
