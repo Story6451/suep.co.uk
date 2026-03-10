@@ -146,6 +146,15 @@ img {
     padding: 10px 16px; /* larger tap area */
   }
 
+  .navbar ul{
+  gap:14px;
+  }
+
+  .navbar a{
+  font-size:18px;
+  padding:12px 14px;
+  }
+
   .glass-panel {
     padding: 25px;
   }
