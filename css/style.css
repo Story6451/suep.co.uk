@@ -61,14 +61,14 @@ margin-top:40px;
 
 .paragraph {
   overflow-wrap: break-word;
-  line-height: 1.0;
+  line-height: 0.5;
   margin-bottom: 20px;
 }
 
 .glass-panel {
   max-width: 900px;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
 
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(6px);
