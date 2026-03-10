@@ -2,12 +2,15 @@
 body {
 margin:0;
 font-family: Arial, sans-serif;
-background:#0a0a0a;
 color:white;
 }
 
+body.home{
+  background:#0a0a0a;
+}
+
 body.projects {
-background:#885757;
+background:#ff0000;
 }
 
 nav {
@@ -83,7 +86,7 @@ margin-top:40px;
 #io2 {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                     url("../images/Io2.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* parallax effect */
