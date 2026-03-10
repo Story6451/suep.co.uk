@@ -58,3 +58,8 @@ padding:20px;
 background:#111;
 margin-top:40px;
 }
+
+.paragraph {
+  width: 400px;
+  overflow-wrap: break-word;
+}
