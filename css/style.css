@@ -1,72 +1,79 @@
-
+/* Global styles */
 body {
-margin:0;
-font-family: Arial, sans-serif;
-background:#000000;
-color:white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
 }
 
+/* Navigation bar */
 nav {
-background:#111;
-padding:10px;
+  background: #111;
+  padding: 10px;
 }
 
 nav ul {
-list-style:none;
-display:flex;
-gap:20px;
-justify-content:center;
-margin:0;
-padding:0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;          /* allows nav to wrap on small screens */
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-color:white;
-text-decoration:none;
-font-weight:bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-color:#00d9ff;
+  color: #00d9ff;
 }
 
+/* Hero section */
 .hero {
-height:60vh;
-background-image:url('../images/Io1Firing.jpg'); /* Replace with your thruster image */
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
+  min-height: 60vh;
+  background-image: url('../images/Io1Firing.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay {
-background:rgba(0,0,0,0.6);
-padding:40px;
-text-align:center;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  text-align: center;
 }
 
+/* Footer */
 footer {
-text-align:center;
-padding:20px;
-background:#111;
-margin-top:40px;
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 40px;
 }
 
+/* Main content container */
 .content {
-  max-width: 1500px;   /* limits line length for readability */
-  margin: auto;       /* centers the content */
-  padding: 40px clamp(20px, 5vw, 50px); /* responsive side spacing */
+  max-width: 1000px;              /* better readable width */
+  margin: auto;
+  padding: 40px clamp(20px,5vw,50px);
 }
 
+/* Paragraph styling */
 .paragraph {
   overflow-wrap: break-word;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
+/* Glass panel for text on images */
 .glass-panel {
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   padding: 40px;
 
@@ -74,9 +81,9 @@ margin-top:40px;
   backdrop-filter: blur(6px);
 
   border-radius: 10px;
-  color: white;
 }
 
+/* Navbar scroll animation */
 .navbar {
   position: fixed;
   top: 0;
@@ -84,32 +91,67 @@ margin-top:40px;
   padding: 20px;
   background: black;
   transition: 0.3s;
-  z-index: 1000;   /* keeps navbar above other elements */
+  z-index: 1000;
 }
 
 .navbar.small {
   padding: 10px;
 }
 
+/* Parallax sections */
 .parallax {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-
+  background-attachment: fixed;
   padding: 120px 20px;
 }
 
 /* Io-1 background */
 #io1 {
   background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("../images/Io1%20Picture%201.jpg");
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../images/Io1%20Picture%201.jpg");
 }
 
 /* Io-2 background */
 #io2 {
   background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("../images/Io2.jpg");
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../images/Io2.jpg");
+}
+
+/* Images scale properly on mobile */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* ---------- MOBILE FIXES ---------- */
+@media (max-width: 768px) {
+
+  nav ul {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .glass-panel {
+    padding: 25px;
+  }
+
+  .hero-overlay {
+    padding: 25px;
+  }
+
+  .parallax {
+    background-attachment: scroll; /* fixes parallax bugs on phones */
+    padding: 80px 20px;
+  }
+
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 18px; }
+
 }
