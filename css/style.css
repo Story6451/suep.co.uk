@@ -101,23 +101,9 @@ margin-top:40px;
 #io1 {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                     url("../images/Io1\ Picture\ 1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* parallax effect */
-  
-  color: white;
-  height: 500px; /* gives the section space */
 }
 
 #io2 {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                     url("../images/Io2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* parallax effect */
-  
-  color: white;
-  height: 500px; /* gives the section space */
 }
