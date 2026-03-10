@@ -54,7 +54,7 @@ margin-top:40px;
 }
 
 .content {
-  max-width: 1500px;   /* limits line length for readability */
+  max-width: 900px;   /* limits line length for readability */
   margin: auto;       /* centers the content */
   padding: 40px clamp(20px, 5vw, 50px); /* responsive side spacing */
 }
