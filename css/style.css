@@ -65,6 +65,39 @@ margin-top:40px;
   margin-bottom: 20px;
 }
 
+.glass-panel {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+
+  background: rgba(0,0,0,0.6);   /* dark transparent background */
+  backdrop-filter: blur(6px);    /* glass blur effect */
+
+  border-radius: 10px;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background: black;
+  transition: 0.3s;
+}
+
+.navbar.small {
+  padding: 10px;
+}
+
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 120px 20px;   /* space above and below content */
+}
+
 #io1 {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                     url("../images/Io1\ Picture\ 1.jpg");
