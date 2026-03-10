@@ -2,15 +2,8 @@
 body {
 margin:0;
 font-family: Arial, sans-serif;
-color:white;
-}
-
-body.home {
 background:#000000;
-}
-
-body.projects {
-background:#ff0000;
+color:white;
 }
 
 nav {
