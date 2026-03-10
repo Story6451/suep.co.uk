@@ -59,7 +59,7 @@ footer {
 
 /* Main content container */
 .content {
-  max-width: 1000px;              /* better readable width */
+  max-width: 1500px;              /* better readable width */
   margin: auto;
   padding: 40px clamp(20px,5vw,50px);
 }
