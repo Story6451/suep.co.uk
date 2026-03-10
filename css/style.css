@@ -136,15 +136,15 @@ img {
   /* Make navbar padding slightly bigger for touch */
   nav {
     padding: 18px;
-    display: flex;                /* use flex to center contents */
-    justify-content: center;      /* horizontally center nav */
+    display: flex;               
+    justify-content: center;      
   }
 
   /* Center the nav list */
   nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;      /* center the links */
+    justify-content: center;     
     gap: 16px;
     padding: 0;
     margin: 0;
@@ -158,13 +158,13 @@ img {
     display: inline-block;
   }
 
-  .navbar ul{
-  gap:14px;
+  .navbar ul {
+    gap: 14px;
   }
 
-  .navbar a{
-  font-size:12px;
-  padding:12px 5px;
+  .navbar a {
+    font-size: 12px;
+    padding: 12px 5px;
   }
 
   .glass-panel {
@@ -176,8 +176,15 @@ img {
   }
 
   .parallax {
-    background-attachment: scroll; /* fixes parallax bugs on phones */
+    background-attachment: scroll;  /* fallback for mobile */
     padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* --------- FIX NAVBAR OVERLAP --------- */
+  body {
+    padding-top: 70px; /* pushes content below fixed navbar */
   }
 
   h1 { font-size: 28px; }
