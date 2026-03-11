@@ -134,6 +134,13 @@ footer {
   url("../images/Io2.jpg");
 }
 
+/* Team members background */
+#team {
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../images/Electric\ propulsion\ logo.png");
+}
+
 /* Images scale properly on mobile */
 img {
   max-width: 100%;
