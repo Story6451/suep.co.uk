@@ -176,12 +176,10 @@ img {
   }
 
   .parallax {
-    background-size: 110%;   /* slightly zoomed */
-    transition: background-size 0.3s ease-out;
-  }
-
-  .parallax:hover {
-    background-size: 120%;   /* subtle hover/scroll effect */
+    background-attachment: scroll;  /* fallback for mobile */
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
   }
 
   /* --------- FIX NAVBAR OVERLAP --------- */
