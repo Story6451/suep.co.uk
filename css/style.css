@@ -84,6 +84,18 @@ footer {
   border-radius: 10px;
 }
 
+/* panel for text on images */
+.panel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+
+  border-radius: 10px;
+}
+
 /* Navbar scroll animation */
 .navbar {
   position: fixed;
