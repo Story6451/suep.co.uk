@@ -164,7 +164,7 @@ img {
 
   .navbar a {
     font-size: 14px;
-    padding: 12px 5px;
+    padding: 12px 0;
   }
 
   .glass-panel {
@@ -186,7 +186,7 @@ img {
 
   /* --------- FIX NAVBAR OVERLAP --------- */
   body {
-    padding-top: 100px; /* pushes content below fixed navbar */
+    padding-top: 150px; /* pushes content below fixed navbar */
   }
 
   h1 { font-size: 28px; }
