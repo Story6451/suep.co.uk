@@ -153,7 +153,7 @@ img {
 
   /* Make links bigger and easier to tap */
   nav a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px 16px;
     display: inline-block;
   }
@@ -176,15 +176,17 @@ img {
   }
 
   .parallax {
-    background-attachment: scroll;  /* fallback for mobile */
-    padding: 80px 20px;
-    background-size: cover;
-    background-position: center;
+    background-size: 110%;   /* slightly zoomed */
+    transition: background-size 0.3s ease-out;
+  }
+
+  .parallax:hover {
+    background-size: 120%;   /* subtle hover/scroll effect */
   }
 
   /* --------- FIX NAVBAR OVERLAP --------- */
   body {
-    padding-top: 70px; /* pushes content below fixed navbar */
+    padding-top: 100px; /* pushes content below fixed navbar */
   }
 
   h1 { font-size: 28px; }
