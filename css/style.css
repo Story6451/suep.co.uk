@@ -195,11 +195,20 @@ img {
   }
 
   .parallax {
-    background-attachment: scroll;  /* fallback for mobile */
+    /* Drop fixed attachment — it's broken on iOS/Android */
+    background-attachment: scroll;
     padding: 80px 20px;
     background-size: cover;
-    background-position: center;
+    
+    /* Simulate depth by anchoring bg to top instead of center */
+    background-position: center top;
   }
+
+  /* Give each section a unique offset so they feel distinct */
+  #io1  { background-position: center 20%; }
+  #io2  { background-position: center 50%; }
+  #team { background-position: center 80%; }
+}
 
   /* --------- FIX NAVBAR OVERLAP --------- */
   body {
