@@ -76,16 +76,9 @@ footer {
   position:absolute;
   left:50%;
   top:50%;
-  width:200px;
+  width:120px;
   height:2px;
-
-  background:linear-gradient(
-    to right,
-    transparent,
-    #00d9ff,
-    transparent
-  );
-
+  background:#00d9ff;
   transform:translate(-50%, -50%);
 }
 
@@ -154,6 +147,12 @@ footer {
 
 /* Io-2 background */
 #io2 {
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../images/Io2.jpg");
+}
+
+#zues {
   background-image:
   linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
   url("../images/Io2.jpg");
