@@ -66,33 +66,19 @@ footer {
 }
 
 .section-divider{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  margin:120px auto;
-  width:100%;
-  max-width:1500px;
-
-  color:#ffffff;
-  font-weight:bold;
-  letter-spacing:2px;
+  height:120px;
+  position:relative;
 }
 
-.section-divider::before,
 .section-divider::after{
   content:"";
-  flex:1;
-  height:5px;
-  background:#ffffff;   /* solid line instead of gradient */
-  opacity:0.6;
-}
-
-.section-divider span{
-  padding:0 20px;
-  font-size:50px;
-  white-space:nowrap;   /* prevents text wrapping */
-  text-shadow:0 0 8px #00d9ff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:1200px;
+  height:2px;
+  background:#ffffff;
+  transform:translate(-50%, -50%);
 }
 
 /* Paragraph styling */
@@ -154,21 +140,21 @@ footer {
 /* Io-1 background */
 #io1 {
   background-image:
-  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
   url("../images/Io1%20Picture%201.jpg");
 }
 
 /* Io-2 background */
 #io2 {
   background-image:
-  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  linear-gradient(rgba(0,0,20,0.6), rgba(0,0,40,0.8)),
   url("../images/Io2.jpg");
 }
 
 #zues {
   background-image:
   linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("../images/Io2.jpg");
+  url("../images/Io1Firing.jpg");
 }
 
 /* Team members background */
