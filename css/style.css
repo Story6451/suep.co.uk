@@ -65,6 +65,22 @@ footer {
   padding: 40px clamp(20px,5vw,50px);
 }
 
+.section-divider{
+  height:120px;
+  background:#000;
+}
+
+.section-divider::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:120px;
+  height:2px;
+  background:#00d9ff;
+  transform:translate(-50%, -50%);
+}
+
 /* Paragraph styling */
 .paragraph {
   overflow-wrap: break-word;
@@ -82,6 +98,7 @@ footer {
   backdrop-filter: blur(6px);
 
   border-radius: 10px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
 
 /* panel for text on images */
