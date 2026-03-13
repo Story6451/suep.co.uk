@@ -204,7 +204,7 @@ img {
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 217, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
 }
 
 .team-member img {
@@ -231,13 +231,13 @@ img {
 }
 
 .team-contact {
-  color: #00d9ff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .team-contact:hover {
-  color: #00b8d4;
+  color: #ffffff;
 }
 
 @media (max-width: 900px) {
