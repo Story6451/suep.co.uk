@@ -204,7 +204,7 @@ img {
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.048);
 }
 
 .team-member img {
