@@ -67,7 +67,8 @@ footer {
 
 .section-divider{
   height:120px;
-  position:relative;
+  background:#000;
+  position:relative;   /* THIS fixes the pseudo element */
 }
 
 .section-divider::after{
@@ -75,7 +76,7 @@ footer {
   position:absolute;
   left:50%;
   top:50%;
-  width:1200px;
+  width:120px;
   height:2px;
   background:#ffffff;
   transform:translate(-50%, -50%);
@@ -147,7 +148,7 @@ footer {
 /* Io-2 background */
 #io2 {
   background-image:
-  linear-gradient(rgba(0,0,20,0.6), rgba(0,0,40,0.8)),
+  linear-gradient(rgba(20, 19, 0, 0.6), rgba(40, 31, 0, 0.8)),
   url("../images/Io2.jpg");
 }
 
