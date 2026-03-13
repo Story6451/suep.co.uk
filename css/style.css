@@ -68,6 +68,7 @@ footer {
 .section-divider{
   height:120px;
   background:#000;
+  position:relative;
 }
 
 .section-divider::after{
@@ -75,9 +76,16 @@ footer {
   position:absolute;
   left:50%;
   top:50%;
-  width:120px;
+  width:200px;
   height:2px;
-  background:#00d9ff;
+
+  background:linear-gradient(
+    to right,
+    transparent,
+    #00d9ff,
+    transparent
+  );
+
   transform:translate(-50%, -50%);
 }
 
@@ -209,6 +217,15 @@ img {
 
   .hero-overlay {
     padding: 25px;
+  }
+
+
+  .section-divider{
+    height:80px;
+  }
+
+  .section-divider::after{
+    width:140px;
   }
 
   .parallax {
