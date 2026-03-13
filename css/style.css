@@ -72,9 +72,9 @@ footer {
 
   margin:120px auto;
   width:100%;
-  max-width:1200px;
+  max-width:1500px;
 
-  color:#00d9ff;
+  color:#ffffff;
   font-weight:bold;
   letter-spacing:2px;
 }
@@ -84,13 +84,13 @@ footer {
   content:"";
   flex:1;
   height:2px;
-  background:#00d9ff;   /* solid line instead of gradient */
+  background:#ffffff;   /* solid line instead of gradient */
   opacity:0.6;
 }
 
 .section-divider span{
   padding:0 20px;
-  font-size:20px;
+  font-size:25px;
   white-space:nowrap;   /* prevents text wrapping */
   text-shadow:0 0 8px #00d9ff;
 }
@@ -236,7 +236,7 @@ img {
   }
 
   .section-divider span{
-    font-size:16px;
+    font-size:20px;
   }
 
   .parallax {
