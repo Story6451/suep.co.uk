@@ -239,15 +239,11 @@ img {
 
 
   .section-divider{
-    height:80px;
+    margin:80px 0;
   }
 
-  .section-divider::after{
-    width:140px;
-  }
-
-  .section-divider::after{
-    width:140px;
+  .section-divider span{
+    font-size:16px;
   }
 
   .parallax {
