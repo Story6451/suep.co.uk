@@ -76,7 +76,7 @@ footer {
   position:absolute;
   left:50%;
   top:50%;
-  width:120px;
+  width:1200px;
   height:2px;
   background:#ffffff;
   transform:translate(-50%, -50%);
@@ -141,21 +141,21 @@ footer {
 /* Io-1 background */
 #io1 {
   background-image:
-  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
   url("../images/Io1%20Picture%201.jpg");
 }
 
 /* Io-2 background */
 #io2 {
   background-image:
-  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
   url("../images/Io2.jpg");
 }
 
 #zues {
   background-image:
   linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("../images/Io1Firing.jpg");
+  url("../images/Io2_render.jpg");
 }
 
 /* Team members background */
@@ -227,6 +227,30 @@ img {
 
 .team-contact:hover {
   color: #ffffff;
+}
+
+figure{
+  counter-increment: figure;
+  text-align:center;
+  margin:40px auto;
+}
+
+figure img{
+  width:100%;
+  max-width:700px;
+  height:auto;
+  display:block;
+  margin:auto;
+}
+
+figcaption{
+  max-width:700px;
+  margin:10px auto;
+}
+
+figcaption::before{
+  content:"Figure " counter(figure) ": ";
+  font-weight:bold;
 }
 
 @media (max-width: 900px) {
@@ -308,6 +332,7 @@ img {
   /* Give each section a unique offset so they feel distinct */
   #io1  { background-position: center 20%; }
   #io2  { background-position: center 50%; }
+  #zues  { background-position: center 50%; }
   #team { background-position: center 80%; }
 
   /* --------- FIX NAVBAR OVERLAP --------- */
