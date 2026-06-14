@@ -285,6 +285,50 @@ figcaption::before{
   transform:translateY(-2px);
 }
 
+.table-container{
+  overflow-x:auto;
+  margin:40px 0;
+}
+
+.latex-table{
+  width:100%;
+  border-collapse:collapse;
+  color:white;
+  font-size:0.95rem;
+}
+
+.latex-table th{
+  text-align:left;
+  padding:12px 10px;
+
+  border-top:2px solid white;
+  border-bottom:2px solid white;
+
+  font-weight:bold;
+}
+
+.latex-table td{
+  padding:12px 10px;
+  vertical-align:top;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.latex-table tbody tr:last-child td{
+  border-bottom:2px solid white;
+}
+
+.latex-table tr:hover{
+  background:rgba(255,255,255,0.05);
+}
+
+.table-caption{
+  text-align:center;
+  margin-top:10px;
+  color:#ccc;
+  font-style:italic;
+}
+
 @media (max-width: 900px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -369,6 +413,10 @@ figcaption::before{
 
     font-size:16px;
     padding:14px 20px;
+  }
+
+  .table-container{
+    overflow-x:auto;
   }
 
   /* Give each section a unique offset so they feel distinct */
