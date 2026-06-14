@@ -315,7 +315,7 @@ figcaption::before{
 
 .latex-table td{
   padding:12px 10px;
-  text-align:left;
+  text-align:center;
   vertical-align:top;
   padding:16px 22px;
 
