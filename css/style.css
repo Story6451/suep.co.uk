@@ -255,6 +255,36 @@ figcaption::before{
   font-weight:bold;
 }
 
+.quiz-button-container{
+  text-align:center;
+  margin:40px 0;
+}
+
+.quiz-button{
+  background:transparent;
+  color:#00d9ff;
+  border:2px solid #00d9ff;
+
+  display:inline-block;
+
+  padding:15px 30px;
+
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+
+  border-radius:8px;
+
+  transition:0.3s;
+}
+
+.quiz-button:hover{
+  background:#00d9ff;
+  color:black;
+  box-shadow:0 0 20px rgba(0,217,255,0.5);
+  transform:translateY(-2px);
+}
+
 @media (max-width: 900px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -331,6 +361,14 @@ figcaption::before{
     
     /* Simulate depth by anchoring bg to top instead of center */
     background-position: center top;
+  }
+
+  .quiz-button{
+    width:80%;
+    max-width:300px;
+
+    font-size:16px;
+    padding:14px 20px;
   }
 
   /* Give each section a unique offset so they feel distinct */
