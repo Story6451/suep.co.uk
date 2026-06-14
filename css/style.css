@@ -291,14 +291,20 @@ figcaption::before{
 }
 
 .latex-table{
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  overflow: hidden;
+
   width:100%;
+  border-spacing: 0 8px; /* vertical breathing room */
   border-collapse:collapse;
   color:white;
   font-size:0.95rem;
 }
 
 .latex-table th{
-  text-align:left;
+  text-align:center;
   padding:12px 10px;
 
   border-top:2px solid white;
@@ -309,7 +315,9 @@ figcaption::before{
 
 .latex-table td{
   padding:12px 10px;
+  text-align:left;
   vertical-align:top;
+  padding:16px 22px;
 
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
@@ -318,8 +326,12 @@ figcaption::before{
   border-bottom:2px solid white;
 }
 
+.latex-table tbody tr:nth-child(odd){
+  background: rgba(255,255,255,0.03);
+}
+
 .latex-table tr:hover{
-  background:rgba(255,255,255,0.05);
+  background: rgba(0,217,255,0.08);
 }
 
 .table-caption{
