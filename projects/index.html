@@ -72,24 +72,76 @@ and poor performance.
 
 <p class="paragraph">
 Io-2 is the natural successor of Io-1 and builds directly from its legacy. 
+A database of prior Hall effect thrusters, their performance and geometric parameters was formed. 
+From this database, scaling laws were applied in order to define the mean channel diameter and channel width. 
+Utilising this, and the design parameters initially decided upon, as shown in Table 1, the mean channel diameter was selected to be 72.6mm and the channel width to be 17.6mm.
+The channel length was sized to be 35mm, longer than typical thrusters, to give the Argon gas more time to form ions, as it has low ionisation energy.
+</p>
 
-<a href="../files/Io2_Documentation.pdf" download="Io2_Documentation.pdf">
-Download Io-2 Report
-</a>
+<div class="table-container">
 
+<table class="latex-table">
+
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Nominal Discharge Power</td>
+<td>1000W</td>
+</tr>
+
+<tr>
+<td>Nominal Discharge Voltage</td>
+<td>300V</td>
+</tr>
+
+<tr>
+<td>Propellant</td>
+<td>Argon</td>
+</tr>
+
+<tr>
+<td>Project Budget</td>
+<td>£1600</td>
+</tr>
+
+</tbody>
+</table>
+
+<p class="paragraph">
+Table 1. Input design parameters for Io2.
+</p>
+
+<p class="paragraph">
+A goal for Io2 is for it to be magnetically sheilded, therefore the topology of the magnetic field is important.
+Unmagnetically sheilded Hall effect thrusters will have a magnetic field topology, such that it will go from zero at the anode,
+then a rapid increase in field strength occurs at the channel exit or just before. 
+A magnetically sheilded Hall effect thruster, reduced the erosion rates on the channel, extending the lifetime of the thruster. 
+This is done by reducing the ion energy before it impacts the channel walls.
+Furthermore, magnetically shielded thrusters reduce the drop in potential energy near the channel exit, 
+displaying that it can also increase the propellant throughput capabilities.
+</p>
+
+<p class="paragraph">
+FEMM was used to simulate the magnetic field for different configurations of the magnetic circuit. 
+Then COMSOL Multiphysics 3D magnetic simulations was used, with H-B curves for each material to simulate the final topology, which is shown in Figure 1.
+Unfortunately, the resulting magnetic field topology shows that Io2 was not magnetically sheilded. 
+The reason it wasn't shielded was due to the peak field being located outside the dishcarge channel.
+To make Io2 magnetically shielded, the magnetic screen walls could be raised higher, which would force the field to curve round the discharge channel.
+Additionally, to bring the peak field inside the channel and improve magnetic sheilding, more advanced materials with higher saturating H-B curves would be needed, 
+or a more creative design.
 </p>
 
 <figure class="figure-image">
-  <img src="../images/Io2 Build.jpg" alt="Io-2 Building">
+  <img src="../images/Magnetic Field Contour Plot.png" alt="Io-2 magnetic field">
   <figcaption>
-    Io-2 being built at the rocket laboratory.
-  </figcaption>
-</figure>
-
-<figure class="figure-image">
-  <img src="../images/Io2_render.jpg" alt="Io-2 Render">
-  <figcaption>
-    Io-2 being built at the rocket laboratory.
+    Io2's Magnetic field contour, as simulated in COMSOL.
   </figcaption>
 </figure>
 
