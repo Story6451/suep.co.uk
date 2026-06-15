@@ -59,6 +59,18 @@ the plasma appears very dense close to the exit plane of the thruster, indicatin
 ionisation and acceleration is occurring closer to the exit plane, which could explain instabilities
 and poor performance.
 </p>
+
+<figure class="figure-image">
+  <img src="../images/Io1 Picture 1.jpg" alt="Io-1 After firing">
+  <figcaption>
+    Io-1 after initial test firing.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+Figure 1, shows Io-1 after its test firing. Damage and wear is present, but expected with the problems it faced.
+</p>
+
 </div>
 </div>
 
@@ -196,7 +208,79 @@ or a more creative design.
 </figure>
 
 <p class="paragraph">
-  Thermal
+  There are several power-loss mechanisms in a Hall effect thruster; though the most notable one is thermal heating. 
+  Simple equations were used to model the thermal loads on the Hall effect thrusters' channel walls. 
+  Discharge power to the anode is another mechanism in which heat is transferred to the thruster, but can be found with another simple equation.
+  The total wall power loss can be found from predicting the power loss at the outer, central, inner and edge wall. 
+  An equation relating the walls areas in these spots, with power loss lead to the heating powers to be found, as shown in Table 2.
+</p>
+
+<div class="table-container">
+
+<table class="latex-table">
+
+<thead>
+<tr>
+<th>Region</th>
+<th>Area (mm^2)</th>
+<th>Power (W)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Total Wall</td>
+<td>15791.16</td>
+<td>211.58</td>
+</tr>
+
+<tr>
+<td>Outer Wall</td>
+<td>9912.08</td>
+<td>96.78</td>
+</tr>
+
+<tr>
+<td>Inner Wall</td>
+<td>5445.52</td>
+<td>106.34</td>
+</tr>
+
+<tr>
+<td>Center Edge</td>
+<td>308.21</td>
+<td>2.45</td>
+</tr>
+
+<tr>
+<td>Outer Edge</td>
+<td>125.35 </td>
+<td>6.02</td>
+</tr>
+
+</tbody>
+</table>
+
+<p class="paragraph">
+  COMSOL 6.3 was then used to thermally simulate the thruster using a solid conduction model, with surface to surface radiation transfer.
+  The final resulting thermal distribution of Io-2 is shown in Figure 6.
+  It should be noted that the model does not account for the thruster stand or thrust balance. 
+  Therefore, it was assumed that temperatures will be lower than the simulated ones. 
+  Though all temperatures simulated are within their operating temperature limits, illustrating that the thruster should safely operate at the designed 1kW, 300V.
+</p>
+
+<figure class="figure-image">
+  <img src="../images/3D thermal distribution.png" alt="Io-2 thermal simulation">
+  <figcaption>
+   Temperature distribution of Io-2, as simulated using COMSOL.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+  Io-2's design process, simulations, equations used, etc, were all documented in a report, published by SUEP. 
+  This report is available for free in the Research section of this website, in order to help others learn from our mistakes and improve our designs. 
+  We hope this report and others produced by SUEP, inspires and advances the electric propulsion field!
 </p>
 
 </div>
@@ -211,12 +295,8 @@ or a more creative design.
 <hr />
 
 <p class="paragraph">
-<img src="../images/Io1 Picture 1.jpg" style="display:block; margin:auto; width:200px;">
-<img src="../images/Io2.jpg" style="display:block; margin:auto; width:200px; margin-top:20px;">
-</p>
-
-<p class="paragraph">
-Zeus is even cooler.
+Zeus is SUEP's most recent project, with the aim of being one of the first undergraduate student societies to create a solid fuel Hall effect thruster.
+More updates are to happen soon!
 </p>
 
 </div>
