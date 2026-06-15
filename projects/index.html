@@ -115,14 +115,14 @@ The channel length was sized to be 35mm, longer than typical thrusters, to give 
 </table>
 
 <p class="paragraph">
-Table 1. Input design parameters for Io2.
+Table 1. Input design parameters for Io-2.
 </p>
 
 <p class="paragraph">
-A goal for Io2 is for it to be magnetically sheilded, therefore the topology of the magnetic field is important.
-Unmagnetically sheilded Hall effect thrusters will have a magnetic field topology, such that it will go from zero at the anode,
+A goal for Io-2 was for it to be magnetically sheilded, therefore the topology of the magnetic field is important.
+Unmagnetically shielded Hall effect thrusters will have a magnetic field topology, such that it will go from zero at the anode,
 then a rapid increase in field strength occurs at the channel exit or just before. 
-A magnetically sheilded Hall effect thruster, reduced the erosion rates on the channel, extending the lifetime of the thruster. 
+A magnetically shielded Hall effect thruster, reduced the erosion rates on the channel, extending the lifetime of the thruster. 
 This is done by reducing the ion energy before it impacts the channel walls.
 Furthermore, magnetically shielded thrusters reduce the drop in potential energy near the channel exit, 
 displaying that it can also increase the propellant throughput capabilities.
@@ -141,12 +141,62 @@ or a more creative design.
 <figure class="figure-image">
   <img src="../images/Magnetic Field Contour Plot.png" alt="Io-2 magnetic field">
   <figcaption>
-    Io2's Magnetic field contour, as simulated in COMSOL.
+    Io-2's Magnetic field contour, as simulated in COMSOL.
   </figcaption>
 </figure>
 
 <p class="paragraph">
-  Io-2 Test   
+  An anode is required in order to produce the axial electric field. 
+  A gas distributor is required to uniformily distribute the gas throughout the discharge channel.
+  A single component could be made to act as both. 
+  Since the flow rate of the gas is very low, the number density of the particles will also be low, resulting in fewer collisions over the discharge channel length.
+  The Knudsen number can be used to describe the collisonality of the gas, describing the mean free path of the neutral atom to it's characteristic length.
+  This characteristic length can be the discharge channel length, the length of the feed pipe, or the internal channels of the gas distributor.
+  Different simulation models are required depending on the Knudsen number, but COMSOL provides an outline on the appropriate models based on number.
+  In this case, the Knusden number should be very small, and is compact, so in order to maintain model accuraccy and abiding by COMSOL recommendations, 
+  it was decided a k-ω model was selected.
+  Gas moving into the discharge channel would require transional flow models, but as long as the flow was uniform at the exit of anode, 
+  no more downstream models would be required. 
+</p>
+
+<figure class="figure-image">
+  <img src="../images/Anode Cross-Section.png" alt="Io-2 Anode Cross section">
+  <figcaption>
+    Io-2's Anode and gas distrubutor design in a cross sectional view.
+  </figcaption>
+</figure>
+
+<figure class="figure-image">
+  <img src="../images/Anode.png" alt="Io-2 Anode">
+  <figcaption>
+    Io-2's Anode and gas distrubutor design in a cross sectional view.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+  After various designs and iterations, a final design was made, as shown in Figure 2 and Figure 3.
+  An 1/8 inch compression fitting was fitted onto the inlet tube to then allow for 1/4 gas supply from the vacuum chamber. 
+  Gas will first be distributed in the lower tubular ring, before moving into the second, 
+  where further baffles will distribute the gas out before being emitted into the discharge channel.
+  Final simulations of the final design (Figure 4 and Figure 5) shows the flow is uniformly discharged through the anode injector part. 
+</p>
+
+<figure class="figure-image">
+  <img src="../images/COMSOL XY.png" alt="Io-2 gas distribution simulation XY">
+  <figcaption>
+    Simulation results in the XY plane, of the gas flow through the anode. Simulated using COMSOL.
+  </figcaption>
+</figure>
+
+<figure class="figure-image">
+  <img src="../images/Magnetic Field Contour Plot.png" alt="Io-2 gas distribution simulation ZX">
+  <figcaption>
+   Simulation results in the ZX plane, of the gas flow through the anode. Simulated using COMSOL.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+  Thermal
 </p>
 
 </div>
