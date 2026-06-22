@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suep.co.uk/sitemap.xml
