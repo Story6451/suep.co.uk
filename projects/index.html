@@ -35,7 +35,7 @@
 <h2><b>Io-1</b></h2>
 <hr />
 <p class="paragraph">
-Io-1, the first thruster developed by SUEP and the foundational technology from which all of our thrusters have been developed. 
+Io-1, the first thruster developed by the Southampton University Electric Propulsion team and the foundational technology from which all of our thrusters have been developed. 
 This thruster was the first to be developed by undergraduate students as part of a society project, and it has taught us valuable skills
 providing us with knowledge we are using to develop our next thrusters.
 It was operating on Krypton gas at the David Fearne Electric Propulsion Laboratory, at the University of Southampton.
@@ -68,7 +68,7 @@ and poor performance.
 </figure>
 
 <p class="paragraph">
-Figure 1, shows Io-1 after its test firing. Damage and wear is present, but expected with the problems it faced.
+Figure 2, shows Io-1 after its test firing. Damage and wear is present, but expected with the problems it faced.
 </p>
 
 </div>
@@ -84,9 +84,9 @@ Figure 1, shows Io-1 after its test firing. Damage and wear is present, but expe
 
 <p class="paragraph">
 Io-2 is the natural successor of Io-1 and builds directly from its legacy. 
-A database of prior Hall effect thrusters, their performance and geometric parameters was formed. 
+A database of prior Hall-effect thrusters, their performance and geometric parameters was formed. 
 From this database, scaling laws were applied in order to define the mean channel diameter and channel width. 
-Utilising this, and the design parameters initially decided upon, as shown in Table 1, the mean channel diameter was selected to be 72.6mm and the channel width to be 17.6mm.
+Utilising these scaling laws, and the design parameters initially decided upon, shown in Table 1, the mean channel diameter was selected to be 72.6mm and the channel width to be 17.6mm.
 The channel length was sized to be 35mm, longer than typical thrusters, to give the Argon gas more time to form ions, as it has low ionisation energy.
 </p>
 
@@ -126,17 +126,21 @@ The channel length was sized to be 35mm, longer than typical thrusters, to give 
 </tbody>
 </table>
 
+<div class="table-caption">
+  Input design parameters for Io-2.
+</div>
+
 </div>
 
 <p class="paragraph">
-Table 1. Input design parameters for Io-2.
+Table 1: Input design parameters for Io-2.
 </p>
 
 <p class="paragraph">
 A goal for Io-2 was for it to be magnetically sheilded, therefore the topology of the magnetic field is important.
-Unmagnetically shielded Hall effect thrusters will have a magnetic field topology, such that it will go from zero at the anode,
+Unmagnetically shielded Hall-effect thrusters will have a magnetic field topology, such that it will go from zero at the anode,
 then a rapid increase in field strength occurs at the channel exit or just before. 
-A magnetically shielded Hall effect thruster, reduced the erosion rates on the channel, extending the lifetime of the thruster. 
+A magnetically shielded Hall-effect thruster, reduced the erosion rates on the channel, extending the lifetime of the thruster. 
 This is done by reducing the ion energy before it impacts the channel walls.
 Furthermore, magnetically shielded thrusters reduce the drop in potential energy near the channel exit, 
 displaying that it can also increase the propellant throughput capabilities.
@@ -145,9 +149,9 @@ displaying that it can also increase the propellant throughput capabilities.
 <p class="paragraph">
 FEMM was used to simulate the magnetic field for different configurations of the magnetic circuit. 
 Then COMSOL Multiphysics 3D magnetic simulations was used, with H-B curves for each material to simulate the final topology, which is shown in Figure 1.
-Unfortunately, the resulting magnetic field topology shows that Io2 was not magnetically sheilded. 
+Unfortunately, the resulting magnetic field topology shows that Io-2 was not magnetically sheilded. 
 The reason it wasn't shielded was due to the peak field being located outside the dishcarge channel.
-To make Io2 magnetically shielded, the magnetic screen walls could be raised higher, which would force the field to curve round the discharge channel.
+To make Io-2 magnetically shielded, the magnetic screen walls could be raised higher, which would force the field to curve round the discharge channel.
 Additionally, to bring the peak field inside the channel and improve magnetic sheilding, more advanced materials with higher saturating H-B curves would be needed, 
 or a more creative design.
 </p>
@@ -210,11 +214,11 @@ or a more creative design.
 </figure>
 
 <p class="paragraph">
-  There are several power-loss mechanisms in a Hall effect thruster; though the most notable one is thermal heating. 
-  Simple equations were used to model the thermal loads on the Hall effect thrusters' channel walls. 
+  There are several power-loss mechanisms in a Hall-effect thruster; though the most notable one is thermal heating. 
+  Simple equations were used to model the thermal loads on the Hall-effect thrusters' channel walls. 
   Discharge power to the anode is another mechanism in which heat is transferred to the thruster, but can be found with another simple equation.
   The total wall power loss can be found from predicting the power loss at the outer, central, inner and edge wall. 
-  An equation relating the walls areas in these spots, with power loss lead to the heating powers to be found, as shown in Table 2.
+  An equation relating the walls areas in these spots, with power loss led to the overal heating powers to be found, shown in Table 2.
 </p>
 
 <div class="table-container">
@@ -264,10 +268,14 @@ or a more creative design.
 </tbody>
 </table>
 
+<div class="table-caption">
+  Table of areas and heating powers used for simulating temperature distribution around the thruster.
+</div>
+
 </div>
 
 <p class="paragraph">
-  COMSOL 6.3 was then used to thermally simulate the thruster using a solid conduction model, with surface to surface radiation transfer.
+  COMSOL 6.3 was then used to thermally simulate the thruster using a solid conduction model, with surface-to-surface radiation transfer.
   The final resulting thermal distribution of Io-2 is shown in Figure 6.
   It should be noted that the model does not account for the thruster stand or thrust balance. 
   Therefore, it was assumed that temperatures will be lower than the simulated ones. 
@@ -283,9 +291,22 @@ or a more creative design.
 
 <p class="paragraph">
   Io-2's design process, simulations, equations used, etc, were all documented in a report, published by SUEP. 
-  This report is available for free in the Research section of this website, in order to help others learn from our mistakes and improve our designs. 
+  This report is available for free to download below, in order to help others learn from our mistakes and improve their own and our designs. 
   We hope this report and others produced by SUEP, inspires and advances the electric propulsion field!
 </p>
+
+<div class="quiz-button-container">
+
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLScncTPlZTN04rQEuT0KgxoyXIU-SMeesphqEZBvGPkscOtRKQ/viewform"
+    target="_blank"
+    class="quiz-button">
+
+    IO-2 Report Download
+
+  </a>
+
+</div>
 
 </div>
 </div>
@@ -300,7 +321,7 @@ or a more creative design.
 <hr />
 
 <p class="paragraph">
-Zeus is SUEP's most recent project, with the aim of being one of the first undergraduate student societies to create a solid fuel Hall effect thruster.
+Zeus is SUEP's most recent project, with the aim of being one of the first undergraduate student societies to create a solid fuel Hall-effect thruster.
 More updates are to happen soon!
 </p>
 
