@@ -90,6 +90,16 @@ footer {
   margin-bottom: 20px;
 }
 
+.paragraph a{
+  color:#00d9ff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.paragraph a:hover{
+  text-decoration:underline;
+}
+
 /* Glass panel for text on images */
 .glass-panel {
   max-width: 1200px;
