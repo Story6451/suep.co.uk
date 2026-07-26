@@ -80,6 +80,7 @@ Figure 2, shows Io-1 after its test firing. Damage and wear is present, but expe
 <h2><b>Io-2</b></h2>
 <hr />
 
+<!--
 <p class="paragraph">
 Io-2 is the natural successor of Io-1 and builds directly from its legacy. Io-2 is a 1kW Argon HET, with an attempt at magnetic sheilding. 
 A database of prior Hall-effect thrusters, their performance and geometric parameters was formed. 
@@ -282,9 +283,104 @@ or a more creative design.
    Temperature distribution of Io-2, as simulated using COMSOL.
   </figcaption>
 </figure>
+-->
 
 <p class="paragraph">
-  Io-2's design process, simulations, equations used, etc, were all documented in a report, published by SUEP. 
+ Io-2 is the natural successor of Io-1 and builds directly from its legacy. 
+ Io-2 is a 1kW Argon Hall-effect thruster, with an attempt at magnetic sheilding to extend the lifetime of the thruster.
+ The intial design parameters of IO-2 is shown in Table 1, which ultimatly dictated many subsequent design decisions.
+</p>
+
+<div class="table-container">
+
+<table class="latex-table">
+
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Nominal Discharge Power</td>
+<td>1000W</td>
+</tr>
+
+<tr>
+<td>Nominal Discharge Voltage</td>
+<td>300V</td>
+</tr>
+
+<tr>
+<td>Propellant</td>
+<td>Argon</td>
+</tr>
+
+<tr>
+<td>Project Budget</td>
+<td>£1600</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="table-caption">
+  Input design parameters for Io-2.
+</div>
+
+<figure class="figure-image">
+  <img src="../images/Io2_render.jpg" alt="CAD Model of io2">
+  <figcaption>
+    CAD model render of IO-2 using SOLIDWORKS.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+  A process of research, simulations and iterations of the design lead us to the final design outcome, shown in Figure 3.
+  Io-2 was modelled in SOLIDWORKS and simulated in FEMM and COMSOL in order to find the magnetic, fluid and thermal distributions.
+  Examples of these simulations are found in Figures 4, 5, and 6. 
+</p>
+
+<figure class="figure-image">
+  <img src="../images/Magnetic Field Contour Plot.png" alt="Io-2 magnetic field">
+  <figcaption>
+    Io-2's Magnetic field contour, as simulated in FEMM.
+  </figcaption>
+</figure>
+
+<figure class="figure-image">
+  <img src="../images/COMSOL XY.png" alt="Io-2 gas distribution simulation XY">
+  <figcaption>
+    Simulation results in the XY plane, of the gas flow through the anode. Simulated using COMSOL.
+  </figcaption>
+</figure>
+
+<figure class="figure-image">
+  <img src="../images/3D thermal distribution.png" alt="Io-2 thermal simulation">
+  <figcaption>
+   Temperature distribution of Io-2, as simulated using COMSOL.
+  </figcaption>
+</figure>
+
+<p class="paragraph">
+Unfortunately, while inital simulations predicted that IO-2 would be magnetically shielded, Figure 4 shows otherwise.
+This was a result of errors in our initial simulatiosn, and Figure 4 is the updated simulation after manufacturing began.
+The reason it wasn't shielded was due to the peak field being located outside the dishcarge channel.
+To make Io-2 magnetically shielded, the magnetic screen walls could be raised higher, which would force the field to curve round the discharge channel.
+Additionally, to bring the peak field inside the channel and improve magnetic sheilding, more advanced materials with higher saturating H-B curves would be needed, 
+or a more creative design.
+This error does not mean the thruster will not run, but will mean it will be susceptible to higher erotion on the channel.
+</p>
+
+<p class="paragraph">
+  As manufacturing is underway, some short updates to this page will take place and to the report published below!
+</p>
+
+<p class="paragraph">
+  Io-2's design process, simulations, equations used, and more, are all documented and published by SUEP. 
   This report is available for free to download below, in order to help others learn from our mistakes and improve their own and our designs. 
   We hope this report and others produced by SUEP, inspires and advances the electric propulsion field!
 </p>
@@ -314,11 +410,11 @@ or a more creative design.
 <hr />
 
 <p class="paragraph">
-Before working on the Zeus project, the SUEP team created a database of currently and past Hall Effect Thruster parameters and performances. 
-These parameters and variables are outlines in Table 3.
+Before working on the Zeus project, the SUEP team created a database of current and past Hall-effect thruster parameters and their performances. 
+These parameters and performances are outlines in Table 2.
 We want to extend our database of information to anyone interested, which has allowed us to define key design parameters for our Zeus project.
-References to where the data was gathered has been provided. 
-Figures 9 & 10 show how the database has been used to compare parameters such as thrust, specific impulse, and power to different fuel types. 
+For example, Figure 7 shows how the database has been used to compare parameters such as thrust, and power to different HET fuel types.
+References to where the data was gathered has been provided within the database.
 </p>
 
 <p class="paragraph">
@@ -422,13 +518,14 @@ SUEP wishes to abide by any copyright laws, so please contact us if any data is 
   </figcaption>
 </figure>
 
+<!--
 <figure class="figure-image">
   <img src="../images/ISP-P.png" alt="DB ISP-Power">
   <figcaption>
     Specific Impulse to power variation with respect to common HET fuel sources using our database.
   </figcaption>
 </figure>
-
+-->
 
 <div class="quiz-button-container">
 
@@ -437,7 +534,7 @@ SUEP wishes to abide by any copyright laws, so please contact us if any data is 
     target="_blank"
     class="quiz-button">
 
-    Excel Database Download
+    Database Download [EXCEL]
 
   </a>
 
